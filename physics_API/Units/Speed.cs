@@ -9,38 +9,36 @@ namespace physics_API.Units
     
     public class Speed
     {
-        private Time.timeUnit bottomUnit;
-        private Distance.distanceUnit topUnit;
-        private double magnitude;
-        public Speed(double mag, Distance.distanceUnit dist, Time.timeUnit time)
+        private Time denominator;
+        private Distance numerator;
+        public Speed(Distance distance, Time time)
         {
-            Magnitude = mag;
-            topUnit = dist;
-            bottomUnit = time;
+            numerator = distance;
+            denominator = time;
         }
-        public Time.timeUnit BottomUnit
+        public Time Denominator
         {
             get
             {
-                return bottomUnit;
+                return denominator;
             }
 
             set
             {
-                bottomUnit = value;
+                denominator = value;
             }
         }
 
-        public Distance.distanceUnit TopUnit
+        public Distance Numerator
         {
             get
             {
-                return topUnit;
+                return numerator;
             }
 
             set
             {
-                topUnit = value;
+                numerator = value;
             }
         }
 
@@ -50,18 +48,15 @@ namespace physics_API.Units
         {
             get
             {
-                return magnitude;
+                return numerator.Magnitude/denominator.Magnitude;
             }
 
-            set
-            {
-                magnitude = value;
-            }
+
         }
 
         public string Units
         {
-            get { return TopUnit.ToString() + " / " + BottomUnit.ToString(); }
+            get { return Numerator.Units.ToString() + " / " + Denominator.Units.ToString(); }
         }
 
         public string toString()

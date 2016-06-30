@@ -27,17 +27,12 @@ namespace physics_API.Units
             {
                 return units;
             }
-
-            set
-            {
-                units = value;
-            }
         }
 
         public Distance(double mag, distanceUnit unit)
         {
             Magnitude = mag;
-            this.Units = unit;
+            this.units = unit;
         }
 
         public void convertTo(distanceUnit to)
@@ -46,6 +41,23 @@ namespace physics_API.Units
             units = to;
             magnitude *= factor;
 
+        }
+
+        public static Distance operator +(Distance d1, Distance d2)
+        {
+            if (d1.Units != d2.Units)
+            {
+                d2.convertTo(d1.Units);
+            }
+            return new Distance(d1.Magnitude + d2.Magnitude, d1.Units);
+        }
+        public static Distance operator -(Distance d1, Distance d2)
+        {
+            if (d1.Units != d2.Units)
+            {
+                d2.convertTo(d1.Units);
+            }
+            return new Distance(d1.Magnitude - d2.Magnitude, d1.Units);
         }
 
     }

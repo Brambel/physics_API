@@ -9,7 +9,6 @@ C:\Users\james\documents\visual studio 2015\Projects\physics_API\physics_Test\ob
 C:\Users\james\documents\visual studio 2015\Projects\physics_API\physics_Test\obj\Debug\physics_Test.pdb
 C:\Users\james.ebert\Documents\workspace\physics_API\physics_Test\bin\Debug\physics_Test.dll
 C:\Users\james.ebert\Documents\workspace\physics_API\physics_Test\bin\Debug\physics_Test.pdb
-C:\Users\james.ebert\Documents\workspace\physics_API\physics_Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\james.ebert\Documents\workspace\physics_API\physics_Test\bin\Debug\physics_API.dll
 C:\Users\james.ebert\Documents\workspace\physics_API\physics_Test\bin\Debug\physics_API.pdb
 C:\Users\james.ebert\Documents\workspace\physics_API\physics_Test\obj\Debug\physics_Test.csprojResolveAssemblyReference.cache

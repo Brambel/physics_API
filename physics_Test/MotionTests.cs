@@ -12,11 +12,27 @@ namespace physics_Test
         [TestMethod]
         public void AverageSpeed()
         {
-            Speed temp = Motion.averageSpeed(new Distance(15, Distance.distanceUnit.Meter), new Distance(10, Distance.distanceUnit.Meter),
-                new Time(0, Time.timeUnit.Second), new Time(10, Time.timeUnit.Second));
-            Assert.AreEqual(.5, temp.Magnitude);
-            Assert.AreEqual("Meter / Second", temp.Units);
+            //check basic operation
+            Distance df = new Distance(15, Distance.distanceUnit.Meter);
+            Distance d0 = new Distance(10, Distance.distanceUnit.Meter);
+            Time tf = new Time(10, Time.timeUnit.Second);
+            Time t0 = new Time(0, Time.timeUnit.Second);
+            Speed s1 = Motion.averageSpeed(df, d0, tf, t0);
 
+            Assert.AreEqual(5, s1.Numerator.Magnitude);
+            Assert.AreEqual(10, s1.Denominator.Magnitude);
+            Assert.AreEqual(.5, s1.Magnitude);
+            Assert.AreEqual("Meter / Second", s1.Units);
+
+            //check internal conversion
+            d0.convertTo(Distance.distanceUnit.Kilometer);
+            
+            s1 = Motion.averageSpeed(df, d0, tf, t0);
+
+            Assert.AreEqual(5, s1.Numerator.Magnitude);
+            Assert.AreEqual(10, s1.Denominator.Magnitude);
+            Assert.AreEqual(.5, s1.Magnitude);
+            Assert.AreEqual("Meter / Second", s1.Units);
         }
     }
 }
