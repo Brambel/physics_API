@@ -3,3 +3,8 @@ c:\users\james\documents\visual studio 2015\Projects\physics_API\physics_API\bin
 c:\users\james\documents\visual studio 2015\Projects\physics_API\physics_API\obj\Debug\physics_API.csprojResolveAssemblyReference.cache
 c:\users\james\documents\visual studio 2015\Projects\physics_API\physics_API\obj\Debug\physics_API.dll
 c:\users\james\documents\visual studio 2015\Projects\physics_API\physics_API\obj\Debug\physics_API.pdb
+C:\Users\james.ebert\Documents\workspace\physics_API\physics_API\bin\Debug\physics_API.dll
+C:\Users\james.ebert\Documents\workspace\physics_API\physics_API\bin\Debug\physics_API.pdb
+C:\Users\james.ebert\Documents\workspace\physics_API\physics_API\obj\Debug\physics_API.csprojResolveAssemblyReference.cache
+C:\Users\james.ebert\Documents\workspace\physics_API\physics_API\obj\Debug\physics_API.dll
+C:\Users\james.ebert\Documents\workspace\physics_API\physics_API\obj\Debug\physics_API.pdb

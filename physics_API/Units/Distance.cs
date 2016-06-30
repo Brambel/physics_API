@@ -1,9 +1,10 @@
-﻿
+﻿using System;
+
 namespace physics_API.Units
 {
     public class Distance
     {
-        public enum distanceUnit { Milimeter, Meter, Kilometer}
+        public enum distanceUnit { Milimeter=-3, Meter=0, Kilometer=3}
         private double magnitude;
         private distanceUnit units;
 
@@ -38,5 +39,14 @@ namespace physics_API.Units
             Magnitude = mag;
             this.Units = unit;
         }
+
+        public void convertTo(distanceUnit to)
+        {
+            double factor = Math.Pow(10, units - to);
+            units = to;
+            magnitude *= factor;
+
+        }
+
     }
 }
