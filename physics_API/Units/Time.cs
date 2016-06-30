@@ -43,6 +43,11 @@ namespace physics_API.Units
             Magnitude = mag;
             Units = unit;
         }
+
+        public void convertTo(timeUnit to)
+        {
+
+        }
     }
 }
     
