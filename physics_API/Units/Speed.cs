@@ -63,5 +63,16 @@ namespace physics_API.Units
         {
             return "Magnitude: " + Magnitude + "\n Units: " + Units;
         }
+
+        public static Speed operator +(Speed s1, Speed s2)
+        {
+            return new Speed(s1.numerator + s2.numerator, s1.denominator + s2.denominator);
+        }
+
+        public static Speed operator -(Speed s1, Speed s2)
+        {
+            return new Speed(s1.numerator - s2.numerator, s1.denominator - s2.denominator);
+        }
+
     }
 }
