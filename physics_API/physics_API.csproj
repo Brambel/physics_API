@@ -37,6 +37,7 @@
     <Compile Include="Motion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Units\Distance.cs" />
+    <Compile Include="Units\Point.cs" />
     <Compile Include="Units\Speed.cs" />
     <Compile Include="Units\Time.cs" />
   </ItemGroup>
